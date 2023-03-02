@@ -1,0 +1,11 @@
+.layout {
+    background-color: black;
+    color: white;
+    position: relative;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,16 +1,10 @@
-import { useState } from "react";
 import BackgroundAnimation from "../components/BackgroundAnimiation";
 import { Typewriter } from "react-simple-typewriter";
-
+import "./index.css";
 import "./home.css";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
-  const [aninimationOver, setAninimationOver] = useState(true);
-  const handleDone = () => {
-    console.log(`Done after 5 loops!`);
-  };
-
   return (
     <div className="layout">
       <BackgroundAnimation />
@@ -22,18 +16,18 @@ export const Home = () => {
           >
             <Typewriter
               words={[
-                "I'm software engineer.",
+                "I'm a software engineer.",
                 "I'm a dog dad.",
                 "I'm a musician.",
                 "I'm a public speaker.",
+                "I'm queer and trans."
               ]}
-              loop={5}
+              loop
               cursor
               cursorStyle="_"
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={1000}
-              onLoopDone={handleDone}
             />
           </span>
           <p className="bio">
@@ -44,7 +38,9 @@ export const Home = () => {
         </div>
         <div className="btn-ctn">
           <Link to="https://github.com/samswagbot">Portfolio</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="mailto:sammossallam@gmail.com?subject=Interested in chatting!&body=Hi Sam,">
+            Contact
+          </Link>
           <Link to="https://resume.creddle.io/resume/6i323bo4q9f">Resume</Link>
         </div>
       </div>

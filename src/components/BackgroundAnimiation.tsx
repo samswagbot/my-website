@@ -4,7 +4,7 @@ const BackgroundAnimation = () => (
     viewBox="0 0 602 602"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    style={{ maxHeight: "1000px" }}
+    style={{ height: "100%" }}
   >
     <g opacity="0.15">
       <path
